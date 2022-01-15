@@ -4,6 +4,8 @@ node{
   
   }
   stage("copile_package"){
-    bat 'mvn package'
+    def mvnHome = tool name: '3.8.4', type: 'maven'
+
+    bat " $(mvnHome)/bin/mvn package"
   }
 }
