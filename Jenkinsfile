@@ -6,3 +6,4 @@ node{
   stage("copile_package"){
     bat 'mvn package'
   }
+}
